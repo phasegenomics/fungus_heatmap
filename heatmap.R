@@ -37,7 +37,7 @@ simpleCap <- function(x) {
 }
 
 #input file
-heatmap.file <- 'heatmap_precluster.txt'
+heatmap.file <- 'heatmap.txt'
 
 #if a command line arg was passed in, it will be used in the title of the heatmap
 species <- "Sample"
@@ -49,7 +49,7 @@ if (length(args) > 0) {
 species.title = simpleCap(species)
 
 #output file
-jpeg.file <- paste("out/",species,"/prescaffolding.heatmap.jpg", sep="")
+jpeg.file <- paste(species,".heatmap.jpg", sep="")
 
 # Get a ColorBrewer palette.
 #palette <- colorRampPalette( rev( brewer.pal( 11, "Spectral" ) ) )
