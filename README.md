@@ -4,12 +4,14 @@ This repository contains a simple R script for generating a Hi-C heatmap
 heatmap.txt to be present in the current working directory. heatmap.txt should
 be in the following format:
 
-`X  Y   Z`
-`x1  y1  z1`
-`x1  y2  z2`
-`x1  y3  z3`
-`...`
-`xn  yn  znn`
+```
+X  Y   Z
+x1  y1  z1
+x1  y2  z2
+x1  y3  z3
+...
+xn  yn  znn
+```
 
 In other words, a text file with a header with the letters "X" "Y" and "Z"
 tab-delimited, followed by one line per pair of (x,y) coordinates that have a
